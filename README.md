@@ -1,6 +1,8 @@
 # newsapp
 
 A new Flutter application.
+In this application I integrate News API and some firebase features. This Application is compatible with Web, Android, and IOS. 
+
 
 ## Getting Started
 
