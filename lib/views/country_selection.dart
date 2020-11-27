@@ -1,16 +1,15 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:newsapp/helper/data.dart';
 import 'package:newsapp/models/country_model.dart';
-
-import '../ad_manager.dart';
 import 'home.dart';
 
 
 
 class CountrySelection extends StatefulWidget {
+  final bool falseloading;
+  CountrySelection({this.falseloading});
   @override
   _CountrySelectionState createState() => _CountrySelectionState();
 }
@@ -31,7 +30,24 @@ class _CountrySelectionState extends State<CountrySelection> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
+        actions: <Widget>[
+            Container(
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                child: IconButton(
+                  onPressed: (){
+                    setState(() {
+
+                    });
+                    Navigator.pop(context);
+                  },
+                  icon: Icon(Icons.outbond_outlined),
+                )
+            )
+
+        ],
+        automaticallyImplyLeading: false,
         elevation: 0,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,

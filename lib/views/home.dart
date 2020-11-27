@@ -112,7 +112,7 @@ class _HomeState extends State<Home> {
                 shrinkWrap: true,
                 itemBuilder: (context, index){
                   return BlogTile(
-                    imgUrl: article[index].urlToImg,
+                    imgUrl: article[index].urlToImg,  
                     title: article[index].title,
                     desc: article[index].desc,
                     url: article[index].url,
